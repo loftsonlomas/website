@@ -2,4 +2,10 @@ User-agent: *
 Disallow: /*.png$
 Disallow: /*.jpg$
 Disallow: /*.jpeg$
+Disallow: /*.webp$
 
+# Link-preview scrapers and browsers must be able to fetch these, or a shared
+# link renders as bare text and the tab shows no icon.
+Allow: /og-image.jpg
+Allow: /favicon-32.png
+Allow: /apple-touch-icon.png

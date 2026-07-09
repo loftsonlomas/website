@@ -1,5 +1,33 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lofts on Lomas — Downtown Albuquerque Apartments for Rent</title>
+    <meta name="description" content="Upscale 1-bedroom loft apartments in downtown Albuquerque, remodeled in 2021. High ceilings, granite counters, in-unit laundry, refrigerated air. From $1,349/mo.">
+    <link rel="canonical" href="https://loftsonlomas.com/">
+
+    <link rel="icon" href="favicon-32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Link previews (iMessage, Facebook, Slack). og-image.jpg is allowlisted
+         in robots.txt; the rest of the photos stay disallowed. -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Lofts on Lomas">
+    <meta property="og:title" content="Lofts on Lomas — Downtown Albuquerque Apartments">
+    <meta property="og:description" content="Upscale 1-bedroom loft apartments in downtown Albuquerque, remodeled in 2021. High ceilings, granite counters, in-unit laundry. From $1,349/mo.">
+    <meta property="og:url" content="https://loftsonlomas.com/">
+    <meta property="og:image" content="https://loftsonlomas.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Living and dining room of a Lofts on Lomas apartment, with exposed ductwork and wood floors">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Built from tailwind.css by bin/build-css.sh. Rerun it after adding any
+         Tailwind class to this file, or the class will have no styles. -->
+    <link rel="stylesheet" href="styles.css">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QD7VL530MZ"></script>
     <script>
@@ -9,22 +37,96 @@
 
       gtag('config', 'G-QD7VL530MZ');
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ApartmentComplex",
+          "@id": "https://loftsonlomas.com/#complex",
+          "name": "Lofts on Lomas",
+          "url": "https://loftsonlomas.com/",
+          "image": "https://loftsonlomas.com/og-image.jpg",
+          "telephone": "+1-505-318-2790",
+          "email": "info@loftsonlomas.com",
+          "petsAllowed": "Small dogs and cats welcome",
+          "smokingAllowed": false,
+          "numberOfAvailableAccommodationUnits": 1,
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1020 Lomas Blvd NW",
+            "addressLocality": "Albuquerque",
+            "addressRegion": "NM",
+            "postalCode": "87102",
+            "addressCountry": "US"
+          },
+          "amenityFeature": [
+            { "@type": "LocationFeatureSpecification", "name": "In-unit washer and dryer", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Refrigerated air conditioning", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Central heating", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Granite countertops", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Walk-in closet", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Dedicated parking lot", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Smart thermostat", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Video doorbell", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Fingerprint front door lock", "value": true }
+          ]
+        },
+        {
+          "@type": "RealEstateListing",
+          "url": "https://loftsonlomas.com/#apartment3",
+          "name": "Apartment 3 — 750 sqft loft, downtown Albuquerque",
+          "description": "Roomy 750 sqft upscale loft-style downtown apartment, 14% larger than the average Albuquerque 1-bedroom. Available July 13, 2026.",
+          "image": "https://loftsonlomas.com/og-image.jpg",
+          "mainEntity": {
+            "@type": "Apartment",
+            "name": "Apartment 3",
+            "containedInPlace": { "@id": "https://loftsonlomas.com/#complex" },
+            "numberOfBedrooms": 1,
+            "numberOfFullBathrooms": 1,
+            "numberOfPartialBathrooms": 1,
+            "occupancy": { "@type": "QuantitativeValue", "maxValue": 2 },
+            "floorSize": { "@type": "QuantitativeValue", "value": 750, "unitCode": "FTK" },
+            "petsAllowed": "Small dogs and cats welcome"
+          },
+          "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "availabilityStarts": "2026-07-13",
+            "businessFunction": "https://schema.org/LeaseOut",
+            "price": 1349,
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": 1349,
+              "priceCurrency": "USD",
+              "unitCode": "MON"
+            }
+          }
+        }
+      ]
+    }
+    </script>
   </head>
   <body class="bg-gray-100 text-gray-800 text-base md:text-lg">
     <div class="container mx-auto p-4">
-      <div class="flex flex-col md:flex-row items-center justify-center mb-8">
-        <img src="loftsonlomas.jpeg" alt="Lofts on Lomas logo" class="w-64 h-auto mb-4 md:mb-0 md:mr-4">
+      <header class="flex flex-col md:flex-row items-center justify-center mb-8">
+        <img src="loftsonlomas.webp" width="640" height="297" fetchpriority="high"
+             alt="The Lofts on Lomas building, seen from its parking lot"
+             class="w-64 h-auto mb-4 md:mb-0 md:mr-4">
         <div class="text-center md:text-left">
-          <h1 class="text-3xl font-bold">Lofts on Lomas</h1>
+          <h1 class="text-3xl font-bold">
+            Lofts on Lomas
+            <span class="block text-lg font-normal text-gray-600">Downtown Albuquerque apartments</span>
+          </h1>
           <div><a href="https://www.google.com/maps/place/1020+Lomas+Blvd+NW,+Albuquerque,+NM+87102" target="_blank" class="text-blue-500 hover:underline"> 1020 Lomas Blvd </a></div>
           <div>Albuquerque, NM 87102</div>
           <div class="mt-4">For a tour or more info, contact Brian at:</div>
           <div class="pl-4"><a href="mailto:info@loftsonlomas.com" class="text-blue-500 hover:underline">info@loftsonlomas.com</a></div>
           <div class="pl-4"><a href="tel:5053182790" class="text-blue-500 hover:underline">505-318-2790</a></div>
         </div>
-      </div>
+      </header>
 
       <div class="mx-auto w-11/12">
         <p class="mb-4">Fully remodeled in 2021 with upscale finishes and designed for comfort: high ceilings, exposed ductwork, granite countertops, tile bathroom, stainless steel appliances, in-unit washer/dryer, refrigerated air, video doorbell, and fingerprint front door lock.</p>
@@ -35,33 +137,23 @@
       <!-- Links to vacancies -->
       <div class="my-8 mx-auto w-11/12 flex flex-col md:flex-row justify-between">
         <div>
-          <!-- Available Now -->
+          <!-- Available Now. When a unit opens up, replace the "none" line with
+               a link, e.g.
+               <a href="#apartment1" class="ml-4 text-red-600 underline">Apartment 1, 750sqft, $1,350</a> -->
           <b class="text-lg">Available Now:</b>
           <br>
           <span class="ml-4">
-            <a href="#apartment1" class="ml-4 text-blue-500 hover:underline" style="color: red; text-decoration: underline;">Apartment 1, 750sqft, $1,350</a>
-          </span>
-<!--
-            <a href="#apartment6" class="ml-4 text-blue-500 hover:underline">Apartment 5, 980sqft, $1,475</a>
             None currently available
-          <b class="ml-4 text-red-500">Half off first month's rent if a lease is signed by July 3rd!</b>
-          <br>
-          <a href="#apartment6" class="ml-4 text-blue-500 hover:underline">Apartment 6, 925sqft, $1,475</a>
-<!--
-          <br>
-          <a href="#apartment3" class="ml-4 text-blue-500 hover:underline">Apartment 3, 750sqft, $1,350</a>
--->
+          </span>
         </div>
         <div class="mt-4 md:mt-0">
-          <!-- Available Soon -->
-          <b class="md:pl-12 text-lg">Available April 23:</b>
+          <!-- Available Soon. When nothing is coming up, replace the link with
+               the words "No new, upcoming vacancies". -->
+          <b class="md:pl-12 text-lg">Available Soon:</b>
           <br>
           <span class="ml-4">
-            No new, upcoming vacancies
+            <a href="#apartment3" class="ml-4 text-blue-500 hover:underline">Apartment 3, 750sqft, $1,349 &mdash; July 13, 2026</a>
           </span>
-<!--
-          <span class="pl-4 md:pl-16">None currently available</span>
--->
         </div>
       </div>
 
@@ -80,9 +172,8 @@
         <ul class="list-disc list-inside pl-8 pt-2 leading-tight">
           <li>1 bedroom, 1.5 bath</li>
           <li>Downtown area, great restaurants</li>
-          <li>Highly walkable</li>
+          <li>Highly walkable and bikeable area</li>
           <li>Large, dedicated parking lot</li>
-          <li>Area is highly walkable, bikable</li>
           <li>Refrigerated air conditioning</li>
           <li>Central heating</li>
           <li>Granite countertops</li>
@@ -95,13 +186,19 @@
         </ul>
       </div>
 
-      <!-- Apartment 1 -->
+      <!-- Apartment 1 is not currently available. To relist it: uncomment the
+           block below, add the unit back to "Available Now" above, and restore
+           its RealEstateListing entry in the JSON-LD block in the head.
+           Unit 1 is the end unit, so it has end-wall windows the interior units
+           lack; unit1/floor-plan.webp and the two window-facing photos below
+           describe only this apartment. -->
+      <!--
       <hr class="w-11/12 h-1 bg-black border-none mx-auto my-8">
-      <div id="apartment1" class="my-8">
+      <section id="apartment1" class="my-8">
 
-        <h1 class="text-2xl font-bold animate-pulse text-red-500">Available Now!</h1><br>
+        <p class="text-2xl font-bold animate-pulse text-red-500">Available Now!</p><br>
 
-        <h1 class="text-2xl font-bold">Apartment 1: Roomy 750 sqft, upscale, lofts-style downtown apartment, with lots of natural light</h1>
+        <h2 class="text-2xl font-bold">Apartment 1: Roomy 750 sqft, upscale, lofts-style downtown apartment, with lots of natural light</h2>
         <p class="my-4">14% larger than average Albuquerque 1-bedroom apartments. 4 windows in the living room/dining room, plus one in the bedroom. Modern loft-style apartment located in the heart of downtown, just steps from restaurants, courthouses, Old Town (15 min walk), and the grocery store (across the street). Excellent walk and bike scores, plus quick access to I-40 and I-25. Ample off-street parking available for guests and clients. Walk-in closet.</p>
         <p class="my-4">
           <b>$1,350/month, $1,000 security deposit, $20/month per pet, $300 per pet security deposit</b>
@@ -110,71 +207,84 @@
         <p class="my-4"><b>View photos and 3D Tour on <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-UNIT-1-Albuquerque-NM-87102/402597346_zpid/?view=public" class="text-blue-500 hover:underline">Zillow.com</a></b>
         </p>
         <div class="flex" style="flex-wrap: wrap">
-          <img src="unit1/dining-and-living-room.jpeg" class="w-1/2 h-auto" alt="View of dining/living room">
-          <img src="unit3/02-floor-plan.jpeg" class="w-1/4 h-auto ml-4" alt="Floor plan">
-          <img src="unit1/living-room.jpeg" class="w-1/2 h-auto" alt="View of living room">
-          <img src="unit1/dining-room-to-frontbath-and-kitchen.jpeg" class="w-1/2 h-auto" alt="View of dining room">
-          <img src="unit1/kitchen-to-bedroom.jpeg" class="w-1/2 h-auto" alt="View of kitchen to bedroom">
-          <img src="unit1/bedroom-to-closet-kitchen-bathroom.jpeg" class="w-1/2 h-auto" alt="View of bedroom to closet/kitchen/bathroom">
-          <img src="unit1/bedroom.jpeg" class="w-1/2 h-auto" alt="View of bedroom">
-          <img src="unit1/back-bathroom.jpeg" class="w-1/2 h-auto" alt="View of back bathroom">
+          <img src="unit1/dining-and-living-room.webp" width="1200" height="675" loading="lazy" decoding="async" class="w-1/2 h-auto" alt="View of dining/living room">
+          <img src="unit1/floor-plan.webp" width="585" height="1200" loading="lazy" decoding="async" class="w-1/4 h-auto ml-4" alt="Floor plan of the 750 sqft layout">
+          <img src="unit1/living-room.webp" width="1200" height="675" loading="lazy" decoding="async" class="w-1/2 h-auto" alt="View of living room">
+          <img src="unit1/dining-room-to-frontbath-and-kitchen.webp" width="1200" height="675" loading="lazy" decoding="async" class="w-1/2 h-auto" alt="View of dining room">
+          <img src="unit1/kitchen-to-bedroom.webp" width="1200" height="675" loading="lazy" decoding="async" class="w-1/2 h-auto" alt="View of kitchen to bedroom">
+          <img src="unit1/bedroom-to-closet-kitchen-bathroom.webp" width="1200" height="675" loading="lazy" decoding="async" class="w-1/2 h-auto" alt="View of bedroom to closet/kitchen/bathroom">
+          <img src="unit1/bedroom.webp" width="1200" height="675" loading="lazy" decoding="async" class="w-1/2 h-auto" alt="View of bedroom">
+          <img src="unit1/back-bathroom.webp" width="1200" height="675" loading="lazy" decoding="async" class="w-1/2 h-auto" alt="View of back bathroom">
         </div>
-      </div>
+      </section>
+      -->
 
       <!-- Apartment 3 -->
       <hr class="w-11/12 h-1 bg-black border-none mx-auto my-8">
-      <div id="apartment3" class="my-8">
+      <section id="apartment3" class="my-8">
 
-        <h1 class="text-xl font-bold">Not Available</h1><br>
-<!--
-        <h1 class="text-2xl font-bold animate-pulse text-red-500">Almost Available! April 16</h1>
--->
+        <p class="text-2xl font-bold animate-pulse text-red-500">Almost Available! July 13</p><br>
 
-        <h1 class="text-2xl font-bold">Apartment 3: Roomy 750 sqft, upscale, lofts-style downtown apartment</h1>
-        <h2 class="text-xl"> Unit similar to this possibly available January 31st, 2026, 1 bedroom, 1.5 bathrooms</h2>
+        <h2 class="text-2xl font-bold">Apartment 3: Roomy 750 sqft, upscale, lofts-style downtown apartment</h2>
+        <p class="text-xl">1 bedroom, 1.5 bathrooms, available July 13, 2026.</p>
         <p class="my-4">14% larger than average Albuquerque 1-bedroom apartments. Modern loft-style apartment located in the heart of downtown, just steps from restaurants, courthouses, Old Town (15 min walk), and the grocery store (across the street). Excellent walk and bike scores, plus quick access to I-40 and I-25. Ample off-street parking available for guests and clients. Walk-in closet.</p>
         <p class="my-4">
-          <b>$1,350/month, $1,000 security deposit, $20/month per pet, $300 per pet security deposit</b>
+          <b>$1,349/month, $1,000 security deposit, $20/month per pet, $300 per pet security deposit</b>
           <br>Owner pays water/trash; tenant pays gas and electricity.
         </p>
         <p class="my-4"><b>View more photos and 3D Tour on <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-3-Albuquerque-NM-87102/2059755897_zpid/?view=public" class="text-blue-500 hover:underline">Zillow.com</a></b>
         </p>
-        <div class="flex">
-          <img src="unit3/01-kitchen.png" class="w-1/2 h-auto" alt="View of kitchen">
-          <img src="unit3/02-floor-plan.jpeg" class="w-1/4 h-auto ml-4" alt="Floor plan">
+        <!-- The remaining photos are of apartment 1, which has the same interior
+             layout. Its dining/living room, living room, and floor plan are
+             deliberately absent: unit 1 is the end unit, so those show end-wall
+             windows apartment 3 does not have. TODO: add a true apartment 3 floor
+             plan as unit3/02-floor-plan.jpeg, then reference it here. -->
+        <div class="flex" style="flex-wrap: wrap">
+          <img src="unit3/01-kitchen.webp" width="1106" height="754" loading="lazy" decoding="async" class="w-1/2 h-auto" alt="View of kitchen">
+          <img src="unit3/dining-room-to-frontbath-and-kitchen.webp" width="1200" height="675" loading="lazy" decoding="async" class="w-1/2 h-auto" alt="View of dining room">
+          <img src="unit3/kitchen-to-bedroom.webp" width="1200" height="675" loading="lazy" decoding="async" class="w-1/2 h-auto" alt="View of kitchen to bedroom">
+          <img src="unit3/bedroom-to-closet-kitchen-bathroom.webp" width="1200" height="675" loading="lazy" decoding="async" class="w-1/2 h-auto" alt="View of bedroom to closet/kitchen/bathroom">
+          <img src="unit3/bedroom.webp" width="1200" height="675" loading="lazy" decoding="async" class="w-1/2 h-auto" alt="View of bedroom">
+          <img src="unit3/back-bathroom.webp" width="1200" height="675" loading="lazy" decoding="async" class="w-1/2 h-auto" alt="View of back bathroom">
         </div>
-      </div>
+      </section>
 
-      <!-- Apartment 5 -->
+      <!-- Apartments 5 and 6 are not currently available. To relist one:
+           uncomment its block below, add the unit to "Available Now" (or
+           "Available Soon") above, and add a RealEstateListing entry to the
+           JSON-LD block in the head. HTML comments cannot nest, so the two
+           section markers below are plain text rather than comments. -->
+      <!--
+      ===== Apartment 5 =====
       <hr class="w-11/12 h-1 bg-black border-none mx-auto my-8">
-      <div id="apartment5" class="my-8">
+      <section id="apartment5" class="my-8">
 
-        <h1 class="text-xl font-bold">Not Available</h1>
+        <p class="text-xl font-bold text-gray-500">Not Available</p>
 
-        <h1 class="text-2xl font-bold">Apartment 5: Spacious 980 sqft, upscale, lofts-style downtown apartment</h1>
-        <h2 class="text-xl">Unit similar to this possibly available August 31, 2026, 1 bedroom, 1.5 bathrooms, available now</h2>
+        <h2 class="text-2xl font-bold">Apartment 5: Spacious 980 sqft, upscale, lofts-style downtown apartment</h2>
+        <p class="text-xl">1 bedroom, 1.5 bathrooms.</p>
         <p class="my-4">49% larger than average Albuquerque 1-bedroom apartments. Modern loft-style apartment located in the heart of downtown, just steps from restaurants, courthouses, Old Town (15 min walk), and the grocery store (across the street). Excellent walk and bike scores, plus quick access to I-40 and I-25. Dedicated parking lot for you and your guests.</p>
         <p class="my-4">
           <b>$1,475/month, $1,000 security deposit, $20/month per pet, $300 per pet security deposit</b>
           <br>Owner pays water/trash; tenant pays gas and electricity.
         </p>
-        <p class="my-4"><b>View more <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-5-Albuquerque-NM-87102/2059613888_zpid/?view=public"" class="text-blue-500 hover:underline">photos</a> and <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-5-Albuquerque-NM-87102/2059613888_zpid/?view=public&mmlb=t,0" class="text-blue-500 hover:underline">3-D Tour</a> on Zillow.com</b>
+        <p class="my-4"><b>View more <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-5-Albuquerque-NM-87102/2059613888_zpid/?view=public" class="text-blue-500 hover:underline">photos</a> and <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-5-Albuquerque-NM-87102/2059613888_zpid/?view=public&mmlb=t,0" class="text-blue-500 hover:underline">3-D Tour</a> on Zillow.com</b>
         </p>
         <div class="flex">
-          <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-5-Albuquerque-NM-87102/2059613888_zpid/?view=public"><img src="unit5/01-kitchen.jpeg" class="w-96 h-auto" alt="View of kitchen"></a>
-          <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-5-Albuquerque-NM-87102/2059613888_zpid/?view=public"><img src="unit5/02-floor-plan.jpeg" class="w-72 h-auto ml-4" alt="Floor plan"></a>
-          <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-5-Albuquerque-NM-87102/2059613888_zpid/?view=public"><img src="unit5/03-entrance-living-room.jpeg" class="w-99 h-auto ml-4" alt="Floor plan"></a>
+          <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-5-Albuquerque-NM-87102/2059613888_zpid/?view=public"><img src="unit5/01-kitchen.webp" width="320" height="181" loading="lazy" decoding="async" class="w-80 h-auto" alt="View of kitchen"></a>
+          <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-5-Albuquerque-NM-87102/2059613888_zpid/?view=public"><img src="unit5/02-floor-plan.webp" width="165" height="320" loading="lazy" decoding="async" class="w-72 h-auto ml-4" alt="Floor plan of the 980 sqft layout"></a>
+          <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-5-Albuquerque-NM-87102/2059613888_zpid/?view=public"><img src="unit5/03-entrance-living-room.webp" width="320" height="181" loading="lazy" decoding="async" class="w-80 h-auto ml-4" alt="View from the entrance into the living room"></a>
         </div>
-      </div>
+      </section>
 
-      <!-- Apartment 6 -->
+      ===== Apartment 6 =====
       <hr class="w-11/12 h-1 bg-black border-none mx-auto my-8">
-      <div id="apartment6" class="my-8">
+      <section id="apartment6" class="my-8">
 
-        <h1 class="text-xl font-bold">Not Available</h1>
+        <p class="text-xl font-bold text-gray-500">Not Available</p>
 
-        <h1 class="text-2xl font-bold">Apartment 6: Spacious 925 sqft, upscale, lofts-style downtown apartment</h1>
-        <h2 class="text-xl">Unit similar to this possibly available August 31, 2026, 1 bedroom, 1.5 bathrooms, available now</h2>
+        <h2 class="text-2xl font-bold">Apartment 6: Spacious 925 sqft, upscale, lofts-style downtown apartment</h2>
+        <p class="text-xl">1 bedroom, 1.5 bathrooms.</p>
         <p class="my-4">40% larger than average Albuquerque 1-bedroom apartments. Modern loft-style apartment located in the heart of downtown, just steps from restaurants, courthouses, Old Town (15 min walk), and the grocery store (across the street). Excellent walk and bike scores, plus quick access to I-40 and I-25. Dedicated parking lot for you and your guests.</p>
         <p class="my-4">
           <b>$1,475/month, $1,000 security deposit, $20/month per pet, $300 per pet security deposit</b>
@@ -183,12 +293,11 @@
         <p class="my-4"><b>View more photos and  <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-6-Albuquerque-NM-87102/450601898_zpid/?view=public&mmlb=t,0" class="text-blue-500 hover:underline">3-D Tour</a> on <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-6-Albuquerque-NM-87102/450601898_zpid/?view=public" class="text-blue-500 hover:underline">Zillow.com</a></b>
         </p>
         <div class="flex">
-          <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-6-Albuquerque-NM-87102/450601898_zpid/?view=public"><img src="unit6/01-kitchen.jpeg" class="w-96 h-auto" alt="View of kitchen"></a>
-          <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-6-Albuquerque-NM-87102/450601898_zpid/?view=public"><img src="unit6/02-floor-plan.jpeg" class="w-72 h-auto ml-4" alt="Floor plan"></a>
+          <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-6-Albuquerque-NM-87102/450601898_zpid/?view=public"><img src="unit6/01-kitchen.webp" width="1200" height="1200" loading="lazy" decoding="async" class="w-96 h-auto" alt="View of kitchen"></a>
+          <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-6-Albuquerque-NM-87102/450601898_zpid/?view=public"><img src="unit6/02-floor-plan.webp" width="934" height="1200" loading="lazy" decoding="async" class="w-72 h-auto ml-4" alt="Floor plan of the 925 sqft layout"></a>
         </div>
-      </div>
-
-
+      </section>
+      -->
 
     </div>
   </body>
