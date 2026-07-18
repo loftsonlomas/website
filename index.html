@@ -52,7 +52,7 @@
           "email": "info@loftsonlomas.com",
           "petsAllowed": "Small dogs and cats welcome",
           "smokingAllowed": false,
-          "numberOfAvailableAccommodationUnits": 1,
+          "numberOfAvailableAccommodationUnits": 0,
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "1020 Lomas Blvd NW",
@@ -72,38 +72,6 @@
             { "@type": "LocationFeatureSpecification", "name": "Video doorbell", "value": true },
             { "@type": "LocationFeatureSpecification", "name": "Fingerprint front door lock", "value": true }
           ]
-        },
-        {
-          "@type": "RealEstateListing",
-          "url": "https://loftsonlomas.com/#apartment3",
-          "name": "Apartment 3 — 750 sqft loft, downtown Albuquerque",
-          "description": "Roomy 750 sqft upscale loft-style downtown apartment, 14% larger than the average Albuquerque 1-bedroom. Available July 13, 2026.",
-          "image": "https://loftsonlomas.com/og-image.jpg",
-          "mainEntity": {
-            "@type": "Apartment",
-            "name": "Apartment 3",
-            "containedInPlace": { "@id": "https://loftsonlomas.com/#complex" },
-            "numberOfBedrooms": 1,
-            "numberOfFullBathrooms": 1,
-            "numberOfPartialBathrooms": 1,
-            "occupancy": { "@type": "QuantitativeValue", "maxValue": 2 },
-            "floorSize": { "@type": "QuantitativeValue", "value": 750, "unitCode": "FTK" },
-            "petsAllowed": "Small dogs and cats welcome"
-          },
-          "offers": {
-            "@type": "Offer",
-            "availability": "https://schema.org/InStock",
-            "availabilityStarts": "2026-07-13",
-            "businessFunction": "https://schema.org/LeaseOut",
-            "price": 1349,
-            "priceCurrency": "USD",
-            "priceSpecification": {
-              "@type": "UnitPriceSpecification",
-              "price": 1349,
-              "priceCurrency": "USD",
-              "unitCode": "MON"
-            }
-          }
         }
       ]
     }
@@ -139,7 +107,7 @@
         <div>
           <!-- Available Now. When a unit opens up, replace the "none" line with
                a link, e.g.
-               <a href="#apartment1" class="ml-4 text-red-600 underline">Apartment 1, 750sqft, $1,350</a> -->
+               <a href="#apartment1" class="ml-4 text-red-600 underline">Apartment 1, 750sqft, $1,349</a> -->
           <b class="text-lg">Available Now:</b>
           <br>
           <span class="ml-4">
@@ -152,7 +120,7 @@
           <b class="md:pl-12 text-lg">Available Soon:</b>
           <br>
           <span class="ml-4">
-            <a href="#apartment3" class="ml-4 text-blue-500 hover:underline">Apartment 3, 750sqft, $1,349 &mdash; July 13, 2026</a>
+            No new, upcoming vacancies
           </span>
         </div>
       </div>
@@ -186,22 +154,26 @@
         </ul>
       </div>
 
-      <!-- Apartment 1 is not currently available. To relist it: uncomment the
-           block below, add the unit back to "Available Now" above, and restore
-           its RealEstateListing entry in the JSON-LD block in the head.
-           Unit 1 is the end unit, so it has end-wall windows the interior units
-           lack; unit1/floor-plan.webp and the two window-facing photos below
-           describe only this apartment. -->
-      <!--
+      <!-- Best-known square footage, from the floor-plan map in the fire closet
+           (+/- ~20 sqft): unit 5 = 991, unit 6 = 1,026, unit 7 = 777. Unit 7
+           has no photos or section yet. "N% larger" claims below are computed
+           against the site's implied ~658 sqft average Albuquerque 1-bedroom. -->
+      <!-- Apartment 1 is shown as a representative unit; it is not currently
+           available. To list it as available: change the badge below back to
+           the red "Available Now!" line, add the unit to "Available Now" above,
+           and add a RealEstateListing entry to the JSON-LD block in the head.
+           Unit 1 is the end unit, so its dining/living-room, living-room, and
+           floor-plan photos show end-wall windows the interior units lack. -->
       <hr class="w-11/12 h-1 bg-black border-none mx-auto my-8">
       <section id="apartment1" class="my-8">
 
-        <p class="text-2xl font-bold animate-pulse text-red-500">Available Now!</p><br>
+        <p class="text-xl font-bold text-gray-500">Not Available</p>
 
         <h2 class="text-2xl font-bold">Apartment 1: Roomy 750 sqft, upscale, lofts-style downtown apartment, with lots of natural light</h2>
+        <p class="text-xl">1 bedroom, 1.5 bathrooms. No units are available right now &mdash; <a href="mailto:info@loftsonlomas.com" class="text-blue-500 hover:underline">email</a> or <a href="tel:5053182790" class="text-blue-500 hover:underline">call 505-318-2790</a> to hear about upcoming openings.</p>
         <p class="my-4">14% larger than average Albuquerque 1-bedroom apartments. 4 windows in the living room/dining room, plus one in the bedroom. Modern loft-style apartment located in the heart of downtown, just steps from restaurants, courthouses, Old Town (15 min walk), and the grocery store (across the street). Excellent walk and bike scores, plus quick access to I-40 and I-25. Ample off-street parking available for guests and clients. Walk-in closet.</p>
         <p class="my-4">
-          <b>$1,350/month, $1,000 security deposit, $20/month per pet, $300 per pet security deposit</b>
+          <b>$1,349/month, $1,000 security deposit, $20/month per pet, $300 per pet security deposit</b>
           <br>Owner pays water/trash; tenant pays gas and electricity.
         </p>
         <p class="my-4"><b>View photos and 3D Tour on <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-UNIT-1-Albuquerque-NM-87102/402597346_zpid/?view=public" class="text-blue-500 hover:underline">Zillow.com</a></b>
@@ -217,16 +189,21 @@
           <img src="unit1/back-bathroom.webp" width="1200" height="675" loading="lazy" decoding="async" class="w-1/2 h-auto" alt="View of back bathroom">
         </div>
       </section>
-      -->
 
-      <!-- Apartment 3 -->
+      <!-- Apartment 3 is not currently available and is hidden: its gallery
+           reused apartment 1's photos (same layout), so showing both would
+           duplicate the same images. To relist it, give it its own photos and a
+           real floor plan (unit3/02-floor-plan.jpeg), then uncomment below, add
+           it to the vacancy list, and add a RealEstateListing to the JSON-LD. -->
+      <!--
+      ===== Apartment 3 =====
       <hr class="w-11/12 h-1 bg-black border-none mx-auto my-8">
       <section id="apartment3" class="my-8">
 
-        <p class="text-2xl font-bold animate-pulse text-red-500">Almost Available! July 13</p><br>
+        <p class="text-xl font-bold text-gray-500">Not Available</p>
 
         <h2 class="text-2xl font-bold">Apartment 3: Roomy 750 sqft, upscale, lofts-style downtown apartment</h2>
-        <p class="text-xl">1 bedroom, 1.5 bathrooms, available July 13, 2026.</p>
+        <p class="text-xl">1 bedroom, 1.5 bathrooms. No units are available right now &mdash; <a href="mailto:info@loftsonlomas.com" class="text-blue-500 hover:underline">email</a> or <a href="tel:5053182790" class="text-blue-500 hover:underline">call 505-318-2790</a> to hear about upcoming openings. Photos below show a representative unit.</p>
         <p class="my-4">14% larger than average Albuquerque 1-bedroom apartments. Modern loft-style apartment located in the heart of downtown, just steps from restaurants, courthouses, Old Town (15 min walk), and the grocery store (across the street). Excellent walk and bike scores, plus quick access to I-40 and I-25. Ample off-street parking available for guests and clients. Walk-in closet.</p>
         <p class="my-4">
           <b>$1,349/month, $1,000 security deposit, $20/month per pet, $300 per pet security deposit</b>
@@ -234,11 +211,9 @@
         </p>
         <p class="my-4"><b>View more photos and 3D Tour on <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-3-Albuquerque-NM-87102/2059755897_zpid/?view=public" class="text-blue-500 hover:underline">Zillow.com</a></b>
         </p>
-        <!-- The remaining photos are of apartment 1, which has the same interior
-             layout. Its dining/living room, living room, and floor plan are
-             deliberately absent: unit 1 is the end unit, so those show end-wall
-             windows apartment 3 does not have. TODO: add a true apartment 3 floor
-             plan as unit3/02-floor-plan.jpeg, then reference it here. -->
+        NOTE: the photos below are apartment 1's (same layout); apartment 3
+        needs its own, plus a real floor plan at unit3/02-floor-plan.jpeg.
+        (This section is currently commented out.)
         <div class="flex" style="flex-wrap: wrap">
           <img src="unit3/01-kitchen.webp" width="1106" height="754" loading="lazy" decoding="async" class="w-1/2 h-auto" alt="View of kitchen">
           <img src="unit3/dining-room-to-frontbath-and-kitchen.webp" width="1200" height="675" loading="lazy" decoding="async" class="w-1/2 h-auto" alt="View of dining room">
@@ -248,12 +223,13 @@
           <img src="unit3/back-bathroom.webp" width="1200" height="675" loading="lazy" decoding="async" class="w-1/2 h-auto" alt="View of back bathroom">
         </div>
       </section>
+      -->
 
-      <!-- Apartments 5 and 6 are not currently available. To relist one:
-           uncomment its block below, add the unit to "Available Now" (or
-           "Available Soon") above, and add a RealEstateListing entry to the
-           JSON-LD block in the head. HTML comments cannot nest, so the two
-           section markers below are plain text rather than comments. -->
+      <!-- Apartment 5 is not currently available. To relist it: uncomment its
+           block below, add it to the vacancy list above, and add a
+           RealEstateListing entry to the JSON-LD block in the head. Its photos
+           are low-resolution 320px originals — replace them before relisting.
+           HTML comments cannot nest, so the section marker below is plain text. -->
       <!--
       ===== Apartment 5 =====
       <hr class="w-11/12 h-1 bg-black border-none mx-auto my-8">
@@ -261,9 +237,9 @@
 
         <p class="text-xl font-bold text-gray-500">Not Available</p>
 
-        <h2 class="text-2xl font-bold">Apartment 5: Spacious 980 sqft, upscale, lofts-style downtown apartment</h2>
+        <h2 class="text-2xl font-bold">Apartment 5: Spacious 991 sqft, upscale, lofts-style downtown apartment</h2>
         <p class="text-xl">1 bedroom, 1.5 bathrooms.</p>
-        <p class="my-4">49% larger than average Albuquerque 1-bedroom apartments. Modern loft-style apartment located in the heart of downtown, just steps from restaurants, courthouses, Old Town (15 min walk), and the grocery store (across the street). Excellent walk and bike scores, plus quick access to I-40 and I-25. Dedicated parking lot for you and your guests.</p>
+        <p class="my-4">51% larger than average Albuquerque 1-bedroom apartments. Modern loft-style apartment located in the heart of downtown, just steps from restaurants, courthouses, Old Town (15 min walk), and the grocery store (across the street). Excellent walk and bike scores, plus quick access to I-40 and I-25. Dedicated parking lot for you and your guests.</p>
         <p class="my-4">
           <b>$1,475/month, $1,000 security deposit, $20/month per pet, $300 per pet security deposit</b>
           <br>Owner pays water/trash; tenant pays gas and electricity.
@@ -272,32 +248,36 @@
         </p>
         <div class="flex">
           <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-5-Albuquerque-NM-87102/2059613888_zpid/?view=public"><img src="unit5/01-kitchen.webp" width="320" height="181" loading="lazy" decoding="async" class="w-80 h-auto" alt="View of kitchen"></a>
-          <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-5-Albuquerque-NM-87102/2059613888_zpid/?view=public"><img src="unit5/02-floor-plan.webp" width="165" height="320" loading="lazy" decoding="async" class="w-72 h-auto ml-4" alt="Floor plan of the 980 sqft layout"></a>
+          <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-5-Albuquerque-NM-87102/2059613888_zpid/?view=public"><img src="unit5/02-floor-plan.webp" width="165" height="320" loading="lazy" decoding="async" class="w-72 h-auto ml-4" alt="Floor plan of the 991 sqft layout"></a>
           <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-5-Albuquerque-NM-87102/2059613888_zpid/?view=public"><img src="unit5/03-entrance-living-room.webp" width="320" height="181" loading="lazy" decoding="async" class="w-80 h-auto ml-4" alt="View from the entrance into the living room"></a>
         </div>
       </section>
+      -->
 
-      ===== Apartment 6 =====
+      <!-- Apartment 6 is shown as a representative unit; it is not currently
+           available. To list it as available, add it to "Available Now" above
+           and add a RealEstateListing entry to the JSON-LD block in the head.
+           Square footage is from the fire-closet floor-plan map, +/- ~20 sqft. -->
       <hr class="w-11/12 h-1 bg-black border-none mx-auto my-8">
       <section id="apartment6" class="my-8">
 
         <p class="text-xl font-bold text-gray-500">Not Available</p>
 
-        <h2 class="text-2xl font-bold">Apartment 6: Spacious 925 sqft, upscale, lofts-style downtown apartment</h2>
+        <h2 class="text-2xl font-bold">Apartment 6: Spacious 1,026 sqft, upscale, lofts-style downtown apartment</h2>
         <p class="text-xl">1 bedroom, 1.5 bathrooms.</p>
-        <p class="my-4">40% larger than average Albuquerque 1-bedroom apartments. Modern loft-style apartment located in the heart of downtown, just steps from restaurants, courthouses, Old Town (15 min walk), and the grocery store (across the street). Excellent walk and bike scores, plus quick access to I-40 and I-25. Dedicated parking lot for you and your guests.</p>
+        <p class="my-4">56% larger than average Albuquerque 1-bedroom apartments. Modern loft-style apartment located in the heart of downtown, just steps from restaurants, courthouses, Old Town (15 min walk), and the grocery store (across the street). Excellent walk and bike scores, plus quick access to I-40 and I-25. Dedicated parking lot for you and your guests.</p>
         <p class="my-4">
           <b>$1,475/month, $1,000 security deposit, $20/month per pet, $300 per pet security deposit</b>
           <br>Owner pays water/trash; tenant pays gas and electricity.
         </p>
         <p class="my-4"><b>View more photos and  <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-6-Albuquerque-NM-87102/450601898_zpid/?view=public&mmlb=t,0" class="text-blue-500 hover:underline">3-D Tour</a> on <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-6-Albuquerque-NM-87102/450601898_zpid/?view=public" class="text-blue-500 hover:underline">Zillow.com</a></b>
         </p>
-        <div class="flex">
-          <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-6-Albuquerque-NM-87102/450601898_zpid/?view=public"><img src="unit6/01-kitchen.webp" width="1200" height="1200" loading="lazy" decoding="async" class="w-96 h-auto" alt="View of kitchen"></a>
-          <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-6-Albuquerque-NM-87102/450601898_zpid/?view=public"><img src="unit6/02-floor-plan.webp" width="934" height="1200" loading="lazy" decoding="async" class="w-72 h-auto ml-4" alt="Floor plan of the 925 sqft layout"></a>
+        <div class="flex" style="flex-wrap: wrap">
+          <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-6-Albuquerque-NM-87102/450601898_zpid/?view=public"><img src="unit6/03-dining-and-kitchen.webp" width="900" height="1200" loading="lazy" decoding="async" class="w-80 h-auto" alt="View of the open living, dining, and kitchen area"></a>
+          <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-6-Albuquerque-NM-87102/450601898_zpid/?view=public"><img src="unit6/01-kitchen.webp" width="1200" height="1200" loading="lazy" decoding="async" class="w-96 h-auto ml-4" alt="View of kitchen"></a>
+          <a href="https://www.zillow.com/homedetails/1020-Lomas-Blvd-NW-SUITE-6-Albuquerque-NM-87102/450601898_zpid/?view=public"><img src="unit6/02-floor-plan.webp" width="934" height="1200" loading="lazy" decoding="async" class="w-72 h-auto ml-4" alt="Floor plan of the 1,026 sqft layout"></a>
         </div>
       </section>
-      -->
 
     </div>
   </body>
